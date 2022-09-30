@@ -1,0 +1,31 @@
+div {
+    height: 200px;
+    width: 200px;
+    border: solid 2px;
+    margin-bottom: 20px;
+    border-color: black;
+}
+
+#numero1 {
+    background-image: linear-gradient(to right top, blue, green, red);
+}
+
+#numero2 {
+    background-image: linear-gradient(110deg, purple 75%, yellow)
+}
+
+#texte {
+    background-image: linear-gradient(to top, rgb(0,0,0,0.5), white);
+}
+
+#numero4 {
+    background-image: radial-gradient(circle at center, lightblue, lightpink);
+}
+
+#numero5 {
+    background-image: repeating-radial-gradient(black, white 10px)
+}
+
+#numero5:hover {
+    background-image: repeating-radial-gradient(white, black 10px)
+}

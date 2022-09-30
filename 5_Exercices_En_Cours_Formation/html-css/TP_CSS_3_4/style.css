@@ -1,0 +1,27 @@
+h1 {
+    color : blue;
+}
+
+h1:hover {
+    color : green
+}
+
+p:hover {
+    background-color: lightgray;
+}
+
+a:link {
+    color : orange
+}
+
+a:visited {
+    color : grey
+}
+
+/*#disappearing:hover {
+    opacity: 0
+}*/
+
+img:hover {
+    display: none
+}
