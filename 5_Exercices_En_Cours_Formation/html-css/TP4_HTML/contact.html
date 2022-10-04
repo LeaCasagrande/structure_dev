@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="lake-g957cfaf88_1280.jpg" alt="Banniere">
+        <h1>Bienvenue sur mon site</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="#article2">Blog</a></li>
+                <li><a href="">Galerie</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="post" action="monProgramme.php">
+        <fieldset>
+            <legend>Contact</legend>
+            <div>
+                <label for="nom">Nom:<span class="etoile">*</span></label>
+                <input type="text" name="nom" required="required" placeholder="Ex. Dupont" minlength="2" maxlength="20">
+            </div>
+            <div>
+                <label for="mail">E-mail:<span class="etoile">*</span></label>
+                <input type="email" name="mail" required="required" placeholder="Ex. dupont@FAI.com">
+            </div>
+            <div>
+                <label for="commentaire">Laissez un commentaire:</label><br>
+                <textarea name="commentaire" id="commentaire" cols="70" rows="10" placeholder="Je donne mon avis"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="envoiCopie" id="envoiCopie" checked><label for="envoiCopie">Envoyer une copie par email</label>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <ul>
+            <li><a href="">Menu 1</a></li>
+            <li><a href="">Menu 2</a></li>
+            <li><a href="">Menu 3</a></li>
+            <li><a href="">Menu 4</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
