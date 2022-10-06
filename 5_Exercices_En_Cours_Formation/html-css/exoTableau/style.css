@@ -1,0 +1,18 @@
+caption {
+    color: blueviolet;
+    font-weight: bold ;
+}
+
+table {
+    border-style: double;
+    border-color: blueviolet;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: solid black 2px;
+}
+
+th {
+    background-color: lightblue;
+}

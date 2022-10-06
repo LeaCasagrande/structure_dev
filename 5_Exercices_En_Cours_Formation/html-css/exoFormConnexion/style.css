@@ -1,0 +1,39 @@
+form {
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+    border: solid 1px black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.label {
+    margin-left: 30px ;
+    margin-right: 20px;
+}
+
+#case {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.button {
+    padding: 5px;
+    margin-top: 15px;
+}
+
+#boutons {
+    text-align: center;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+.champ {
+    margin-top: 10px;
+    margin-bottom: 10px;         
+}
