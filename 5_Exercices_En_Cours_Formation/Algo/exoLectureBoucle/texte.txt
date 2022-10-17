@@ -1,0 +1,615 @@
+pikachu(1,4)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 4 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (1) ? Oui
+    J'incrémente result (0) de b (4) -> result passe à 4
+    J'incrémente i (0) de 1 -> i passe à 1
+    Est-ce que i (1) < a (1) ? Non
+Le boucle est terminée
+La réponse est : result (4)
+
+plafond(2,3)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable b et je mets 3 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (2) ? Oui
+    Je donne à result la valeur de b (3) -> result passe à 3
+    J'incrémente i (0) de 1 -> i passe à 1
+
+    Est-ce que i (1) < a (2) ? Oui
+    Je donne à result la valeur de b (3) -> result passe à 3
+    J'incrémente i (1) de 1 -> i passe à 2
+
+    Est-ce que i (2) < a (2) ? Non
+Le boucle est terminée
+La réponse est : result (3)
+
+plafond(3,2)
+
+Je crée la variable a et je mets 3 dedans.
+Je crée la variable b et je mets 2 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (3) ? Oui
+    Je donne à result la valeur de b (2) -> result passe à 2
+    J'incrémente i (0) de 1 -> i passe à 1
+
+    Est-ce que i (1) < a (3) ? Oui
+    Je donne à result la valeur de b (2) -> result passe à 2
+    J'incrémente i (1) de 1 -> i passe à 2
+
+    Est-ce que i (2) < a (3) ? Oui
+    Je donne à result la valeur de b (2) -> result passe à 2
+    J'incrémente i (2) de 1 -> i passe à 3
+
+    Est-ce que i (3) < a (3) ? Non
+Le boucle est terminée
+La réponse est : result (2)
+
+tableur(1,1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 1 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < ou = a (1) ? Oui
+    J'incrémente result (0) de b (1) -> result passe à 1
+    J'incrémente i (0) de 1 -> i passe à 1
+
+    Est-ce que i (1) < ou = a (1) ? Oui
+    J'incrémente result (1) la valeur de b (1) -> result passe à 2
+    J'incrémente i (1) de 1 -> i passe à 2
+
+    Est-ce que i (2) < ou = a (1) ? Non
+Le boucle est terminée
+La réponse est : result (2)
+
+tableur(4,1)
+
+Je crée la variable a et je mets 4 dedans.
+Je crée la variable b et je mets 1 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < ou = a (4) ? Oui
+    J'incrémente result (0) de b (1) -> result passe à 1
+    J'incrémente i (0) de 1 -> i passe à 1
+
+    Est-ce que i (1) < ou = à a (4) ? Oui
+    J'incrémente result (1) de b (1) -> result passe à 2
+    J'incrémente i (1) de 1 -> i passe à 2
+
+    Est-ce que i (2) < ou = à a (4) ? Oui
+    J'incrémente result (2) de b (1) -> result passe à 3
+    J'incrémente i (2) de 1 -> i passe à 3
+
+    Est-ce que i (3) < ou = à a (4) ? Oui
+    J'incrémente result (3) de b (1) -> result passe à 4
+    J'incrémente i (3) de 1 -> i passe à 4
+
+    Est-ce que i (4) < ou = à a (4) ? Oui
+    J'incrémente result (4) de b (1) -> result passe à 5
+    J'incrémente i (4) de 1 -> i passe à 5
+
+    Est-ce que i (4) < ou = à a (5) ? Non
+Le boucle est terminée
+La réponse est : result (5)
+
+lol(0,7)
+
+Je crée la variable a et je mets 0 dedans.
+Je crée la variable b et je mets 7 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (0) ? Non
+La boucle est terminée.
+La réponse est : result (0)
+
+lol(2,3)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable b et je mets 3 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0.0 dedans
+    Est-ce que i (0.0) < a (2) ? Oui
+    J'incrémente result (0) de b (3) -> result passe à 3
+    J'incrémente i (0.0) de 0.5 -> i passe à 0.5
+
+    Est-ce que i (0.5) < a (2) ? Oui
+    J'incrémente result (3) de b (3) -> result passe à 6
+    J'incrémente i (0.5) de 0.5 -> i passe à 1
+
+    Est-ce que i (1) < a (2) ? Oui
+    J'incrémente result (6) de b (3) -> result passe à 9
+    J'incrémente i (1) de 0.5 -> i passe à 1.5
+
+    Est-ce que i (1.5) < a (2) ? Oui
+    J'incrémente result (6) de b (3) -> result passe à 12
+    J'incrémente i (1.5) de 0.5 -> i passe à 2
+
+    Est-ce que i (2) < a (2) ? Non
+La boucle est terminée.
+La réponse est : result (12)
+
+wolverine(1,3)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 3 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (1) ? Oui
+
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (3) ? Oui
+        J'incrémente result (0) de 1 -> result passe à 1
+        J'incrémente j (0) de 1 -> j passe à 1
+
+        Est-ce que j (1) < b (3) ? Oui
+        J'incrémente result (1) de 1 -> result passe à 2
+        J'incrémente j (1) de 1 -> j passe à 2
+
+        Est-ce que j (2) < b (3) ? Oui
+        J'incrémente result (2) de 1 -> result passe à 3
+        J'incrémente j (1) de 1 -> j passe à 3
+
+        Est-ce que j (3) < b (3) ? Non
+    La boucle est terminée.
+    J'incrémente i (0) de 1 -> i passe à 1
+
+    Est-ce que i (1) < a(1) -> Non
+La boucle est terminée
+La réponse est : result (3)
+
+wolverine(1,3)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 3 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (1) ? Oui
+    
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (3) ? Oui
+        J'incrémente result (0) de 1 -> result passe à 1
+        J'incrémente j (0) de 1 -> j passe à 1
+
+        Est-ce que j (1) < b (3) ? Oui
+        J'incrémente result (1) de 1 -> result passe à 2
+        J'incrémente j (1) de 1 -> j passe à 2
+
+        Est-ce que j (2) < b (3) ? Oui
+        J'incrémente result (2) de 1 -> result passe à 3
+        J'incrémente j (1) de 1 -> j passe à 3
+
+        Est-ce que j (3) < b (3) ? Non
+    La boucle est terminée.
+    J'incrémente i (0) de 1 -> i passe à 1
+
+    Est-ce que i (1) < a (1) -> Non
+La boucle est terminée
+La réponse est : result (3)
+
+wolverine(2,0)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable b et je mets 0 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (2) ? Oui
+    
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (0) ? Non
+    La boucle est terminée.
+    J'incrémente i (0) de 1 -> i passe à 1
+    Est-ce que i (1) < a (2) -> Oui
+
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (0) ? Non
+    La boucle est terminée.
+    J'incrémente i (1) de 1 -> i passe à 2
+    Est-ce que i (2) < a (2) -> Non
+La boucle est terminée
+La réponse est : result (0)
+
+wolverine(5,1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 5 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans
+    Est-ce que i (0) < a (5) ? Oui
+    
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        J'incrémente result (0) de 1 -> result passe à 1
+        J'incrémente j (0) de 1 -> j passe à 1
+        
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée.
+    J'incrémente i (0) de 1 -> i passe à 1
+    Est-ce que i (1) < a (5) -> Oui
+
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        J'incrémente result (1) de 1 -> result passe à 2
+        J'incrémente j (0) de 1 -> j passe à 1
+
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée.
+    J'incrémente i (1) de 1 -> i passe à 2
+    Est-ce que i (2) < a (5) -> Oui
+
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        J'incrémente result (2) de 1 -> result passe à 3
+        J'incrémente j (0) de 1 -> j passe à 1
+
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée.
+    J'incrémente i (2) de 1 -> i passe à 3
+    Est-ce que i (3) < a (5) -> Oui
+
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        J'incrémente result (3) de 1 -> result passe à 4
+        J'incrémente j (0) de 1 -> j passe à 1
+
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée.
+    J'incrémente i (3) de 1 -> i passe à 4
+    Est-ce que i (4) < a (5) -> Oui
+
+    Début de la 2eme boucle : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        J'incrémente result (3) de 1 -> result passe à 5
+        J'incrémente j (0) de 1 -> j passe à 1
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée.
+    J'incrémente i (4) de 1 -> i passe à 5
+    Est-ce que i (5) < a (5) -> Non
+
+La boucle est terminée
+La réponse est : result (5)
+
+ventilateur(2,3)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable b et je mets 3 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets a dedans.
+    Est-ce que i (2) < a (2) ? Non
+La boucle est terminée
+La réponse est : result (0)
+
+ventilateur(4,5)
+
+Je crée la variable a et je mets 4 dedans.
+Je crée la variable b et je mets 5 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets a dedans.
+    Est-ce que i (4) < a (4) ? Non
+La boucle est terminée
+La réponse est : result (0)
+
+bob(1,1,1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 1 dedans.
+Je crée la variable c et je mets 1 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle i : je crée i et je mets 0 dedans.
+    Est-ce que i (0) < a (1) ? Oui
+    Début de la boucle j : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        Début de la boucle k : je crée k et je mets 0 dedans.
+            Est-ce que k (0) < c (1) ? Oui
+            J'incrémente result de 1 -> result passe à 1
+            J'incrémente k (0) de 1 -> k passe à 1
+            Est-ce que k (1) < c (1) ? Non
+        La boucle est terminée
+        J'incrémente j (0) de 1 -> j passe à 1
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée
+    J'incrémente i (0) de 1 -> i passe à 1
+    Est-ce que i (1) < a (1) ? Non
+La boucle est terminée
+La réponse est result (1)
+
+bob(2,1,3)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable b et je mets 1 dedans.
+Je crée la variable c et je mets 3 dedans.
+Je crée la variable result et je mets 0 dedans.
+Début de la boucle i : je crée i et je mets 0 dedans.
+    Est-ce que i (0) < a (2) ? Oui
+    
+    Début de la boucle j : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        
+        Début de la boucle k : je crée k et je mets 0 dedans.
+            Est-ce que k (0) < c (3) ? Oui
+            J'incrémente result de 1 -> result passe à 1
+            J'incrémente k (0) de 1 -> k passe à 1
+            Est-ce que k (1) < c (3) ? Oui
+            J'incrémente result de 1 -> result passe à 2
+            J'incrémente k (1) de 1 -> k passe à 2
+            Est-ce que k (2) < c (3) ? Oui
+            J'incrémente result de 1 -> result passe à 3
+            J'incrémente k (2) de 1 -> k passe à 3
+            Est-ce que k (3) < c (3) ? Non
+        La boucle est terminée
+        
+        J'incrémente j (0) de 1 -> j passe à 1
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée
+    
+    J'incrémente i (0) de 1 -> i passe à 1
+    Est-ce que i (1) < a (2) ? Oui
+       
+    Début de la boucle j : je crée j et je mets 0 dedans.
+        Est-ce que j (0) < b (1) ? Oui
+        
+        Début de la boucle k : je crée k et je mets 0 dedans.
+            Est-ce que k (0) < c (3) ? Oui
+            J'incrémente result de 1 -> result passe à 4
+            J'incrémente k (0) de 1 -> k passe à 1
+            Est-ce que k (1) < c (3) ? Oui
+            J'incrémente result de 1 -> result passe à 5
+            J'incrémente k (1) de 1 -> k passe à 2
+            Est-ce que k (2) < c (3) ? Oui
+            J'incrémente result de 1 -> result passe à 6
+            J'incrémente k (2) de 1 -> k passe à 3
+            Est-ce que k (3) < c (3) ? Non
+        La boucle est terminée
+        
+        J'incrémente j (0) de 1 -> j passe à 1
+        Est-ce que j (1) < b (1) ? Non
+    La boucle est terminée
+    
+    J'incrémente i (1) de 1 -> i passe à 2
+    Est-ce que i (2) < a (2) ? Non
+La boucle est terminée
+La réponse est result (6)
+
+calcul(0)
+
+Je crée la variable a et je mets 0 dedans.
+Je crée la variable aaa et je mets 1 dedans.
+Début de la boucle i : je crée i et je mets 2 dedans.
+    Est-ce que i (2) < ou = à a (0) ? Non
+La boucle est terminée
+La réponse est aaa (1)
+
+calcul(1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable aaa et je mets 1 dedans.
+Début de la boucle i : je crée i et je mets 2 dedans.
+    Est-ce que i (2) < ou = à a (1) ? Non
+La boucle est terminée
+La réponse est aaa (1)
+
+calcul(2)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable aaa et je mets 1 dedans.
+Début de la boucle i : je crée i et je mets 2 dedans.
+    Est-ce que i (2) < ou = à a (2) ? Oui
+    J'affecte la valeur aaa* i (2) à la variable aaa -> aaa passe à 2
+    J'incrémente i (2) de 1 -> i passe à 3
+    Est-ce que i (3) < ou = à a (2) ? Non
+La boucle est terminée
+La réponse est aaa (2)
+
+calcul(3)
+
+Je crée la variable a et je mets 3 dedans.
+Je crée la variable aaa et je mets 1 dedans.
+Début de la boucle i : je crée i et je mets 2 dedans.
+    Est-ce que i (2) < ou = à a (3) ? Oui
+    J'affecte la valeur aaa* i (2) à la variable aaa -> aaa passe à 2
+    J'incrémente i (2) de 1 -> i passe à 3
+    Est-ce que i (3) < ou = à a (3) ? Oui
+    J'affecte la valeur aaa* i (3) à la variable aaa -> aaa passe à 6
+    J'incrémente i (4) de 1 -> i passe à 4
+    Est-ce que i (4) < ou = à a (3) ? Non
+La boucle est terminée
+La réponse est aaa (6)
+
+python(0)
+
+Je crée la variable a et je mets 0 dedans.
+Je crée la variable monResultat.
+Si a(0) < 2 : oui -> monResultat passe à 1
+La réponse est : monResultat (1)
+
+python(1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable monResultat.
+Si a(1) < 2 : oui -> monResultat passe à 1
+La réponse est : monResultat (1)
+
+python(2)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable monResultat.
+Si a(2) < 2 : non 
+Alors j'affecte la valeur a*python(a(2)-1) à monResultat -> monResultat passe à 2 
+La réponse est : monResultat (2)
+
+python(3)
+
+Je crée la variable a et je mets 3 dedans.
+Je crée la variable monResultat.
+Si a(3) < 2 : non
+Alors j'affecte la valeur a*python(a(3)-1) à monResultat -> monResultat passe à 6 
+La réponse est : monResultat (6)
+
+python(4)
+
+Je crée la variable a et je mets 4 dedans.
+Je crée la variable monResultat.
+Si a(4) < 2 : non
+Alors j'affecte la valeur a*python(a(4)-1) à monResultat -> monResultat passe à 24 
+La réponse est : monResultat (24)
+
+python(5)
+
+Je crée la variable a et je mets 5 dedans.
+Je crée la variable monResultat.
+Si a(5) < 2 : non
+Alors j'affecte la valeur a*python(a(5)-1) à monResultat -> monResultat passe à 120 
+La réponse est : monResultat (120)
+
+python(6)
+
+Je crée la variable a et je mets 6 dedans.
+Je crée la variable monResultat.
+Si a(6) < 2 : non 
+Alors j'affecte la valeur a*python(a(6)-1) à monResultat -> monResultat passe à 720 
+La réponse est : monResultat (720)
+
+erogahtyp(1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable x.
+Si a(1) est un nb pair : non
+Alors j'affecte la valeur 3*a(1)+1 à la variable x -> x passe à 4
+La réponse est x (4)
+
+erogahtyp(2)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable x.
+Si a(2) est un nb pair : oui
+Donc j'affecte la valeur a(2)/2 à la variable x -> x passe à 1
+La réponse est x (1)
+
+erogahtyp(3)
+
+Je crée la variable a et je mets 3 dedans.
+Je crée la variable x.
+Si a(3) est un nb pair : non
+Alors j'affecte la valeur 3*a(3)+1 à la variable x -> x passe à 10
+La réponse est x (10)
+
+erogahtyp(4)
+
+Je crée la variable a et je mets 4 dedans.
+Je crée la variable x.
+Si a(4) est un nb pair : oui
+Donc j'affecte la valeur a(4)/2 à la variable x -> x passe à 2
+La réponse est x (2)
+
+erogahtyp(5)
+
+Je crée la variable a et je mets 5 dedans.
+Je crée la variable x.
+Si a(5) est un nb pair : non
+Alors j'affecte la valeur 3*a(5)+1 à la variable x -> x passe à 16
+La réponse est x (16)
+
+pythagore(1,1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 1 dedans.
+Je crée la variable result et je mets a dedans.
+Début de la boucle i : je crée la variable i et je mets 0 dedans.
+    Est-ce que i(0) < b(1) ? Oui
+    J'affecte erogahtyp(1) à result -> result passe à 4
+La boucle est terminée
+La réponse est result (4)
+
+pythagore(1,3)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 3 dedans.
+Je crée la variable result et je mets a dedans.
+Début de la boucle i : je crée la variable i et je mets 0 dedans.
+    Est-ce que i(0) < b(3) ? Oui
+    J'affecte erogahtyp(1) à result -> result passe à 4
+    J'incrémente i de 1 -> i passe à 1
+    
+    Est-ce que i(1) < b(3) ? Oui
+    J'affecte erogahtyp(4) à result -> result passe à 2
+    J'incrémente i de 1 -> i passe à 2
+    
+    Est-ce que i(2) < b(3) ? Oui
+    J'affecte erogahtyp(1) à result -> result passe à 4
+    J'incrémente i de 1 -> i passe à 3
+    
+    Est-ce que i(3) < b(3) ? Non
+La boucle est terminée
+La réponse est result (4)
+
+aceeilnrtt(1)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable tluser et je mets 0 dedans.
+Je crée la variable v et je mets a dedans.
+Tant que v est différent de 1 ? false
+    v est différent de 1 ? false
+Le tant que est terminé
+La réponse est tluser (0)
+
+aceeilnrtt(4)
+
+Je crée la variable a et je mets 4 dedans.
+Je crée la variable tluser et je mets 0 dedans.
+Je crée la variable v et je mets a dedans.
+Tant que v est différent de 1 ? true
+    J'affecte erogahtyp(4) à v : v vaut 2
+    J'incrémente tluser de 1 -> tluser passe à 1
+    v est différent de 1 ? true
+    J'affecte erogahtyp(2) à v : v vaut 1
+    J'incrémente tluser de 1 -> tluser passe à 2
+    v est différent de 1 ? false
+Le tant que est terminé
+La réponse est tluser (1)
+
+micmath(1,2)
+
+Je crée la variable a et je mets 1 dedans.
+Je crée la variable b et je mets 2 dedans.
+Je crée la variable c et je mets 0 dedans.
+Tant que a > ou égal à b (2) ? false
+La réponse est c(0)
+
+micmath(2,2)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable b et je mets 2 dedans.
+Je crée la variable c et je mets 0 dedans.
+Tant que a (2) > ou égal à b (2) ? true
+    J'affecte a/b à a (2) -> a passe à 1
+    J'incrémente c de 1 -> c passe à 1
+    a > ou égal à b (2) ? fasle
+La réponse est c(0)
+
+micmath(2,2)
+
+Je crée la variable a et je mets 2 dedans.
+Je crée la variable b et je mets 2 dedans.
+Je crée la variable c et je mets 0 dedans.
+Tant que a (2) > ou égal à b (2) ? true
+    J'affecte a/b à a (2) -> a passe à 1
+    J'incrémente c de 1 -> c passe à 1
+    a (1) > ou égal à b (2) ? fasle
+La réponse est c(1)
+
+micmath(3,2)
+
+Je crée la variable a et je mets 3 dedans.
+Je crée la variable b et je mets 2 dedans.
+Je crée la variable c et je mets 0 dedans.
+Tant que a (3) > ou égal à b (2) ? true
+    J'affecte a/b à a (2) -> a passe à 1.5
+    J'incrémente c de 1 -> c passe à 1
+    a (1.5) > ou égal à b (2) ? fasle
+La réponse est c(1)
