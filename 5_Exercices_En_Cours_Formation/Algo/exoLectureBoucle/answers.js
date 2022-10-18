@@ -81,7 +81,7 @@ function python(a) {
 
 function erogahtyp(a) {
 	let x;
-	if(a%2 == 0) {
+	if(a%2 == 0) { //Est-ce que le nb contenu dans a est pair ?
 		x = a/2;
 	}
 	else {
@@ -93,7 +93,7 @@ function erogahtyp(a) {
 function pythagore(a,b) {
 	let result = a;
 	for(let i=0; i<b; i++) {
-		result=erogahtyp(result);
+		result = erogahtyp(result);
 	}
 	return result;
 }
