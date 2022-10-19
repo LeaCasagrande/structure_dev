@@ -190,7 +190,15 @@ for (let i=1 ; i<7 ; i++) {
 
 // Exercice 12 : en prenant des dés à 20 faces, combien de résultats différents (sans doublon) peut-on afficher ? (Autrement dit : adapter le code précédent pour compter les résultats au lieu de les afficher)
 console.log("Exercice 12");
-// TODO
+let countExo12 = 0;
+for (let i=1 ; i<21 ; i++) {
+    for (let j=1 ; j<21 ; j++) {
+        if(i<=j){
+            countExo12++;
+        }
+    }
+}
+console.log(countExo12);
 
 // Exercice 13 : afficher la table de multiplication de 1 (de 1 à 9):
 // 1x1 = 1
