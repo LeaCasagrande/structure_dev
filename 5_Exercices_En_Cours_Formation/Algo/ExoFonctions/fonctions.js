@@ -86,3 +86,93 @@ function f9 (n1,word){
         console.log(word);
     }
 }
+
+
+
+
+
+
+
+// Correction //
+// Écrire une fonction f7 qui prend deux nombres en entrée et qui retourne le plus grand des deux.
+function f7(n1,n2) {
+    if(n1>n2) {
+        return n1;
+    } else {
+        return n2;
+    }
+}
+
+console.log(f7(1,2));
+console.log(f7(2,1));
+
+// Écrire une fonction f8 qui prend trois nombres en entrée et qui retourne le plus grand des trois.
+// (Au moins deux versions possibles : sans utiliser f7, et en utilisant f7).
+function f8(n1,n2,n3) {
+    if(n1>=n2 && n1>=n3) {
+        return n1;
+    } else if(n2>=n1 && n2>=n3) {
+        return n2;
+    } else {
+        return n3;
+    }
+}
+
+console.log(f8(10,11,12));
+console.log(f8(10,12,11));
+console.log(f8(12,11,10));
+console.log(f8(10,15,10));
+console.log(f8(10,10,5));
+
+function f8Bis(n1,n2,n3) {
+    if(n1>n2) {
+        // n2 est éliminé
+        if(n1>n3) {
+            return n1;
+        } else {
+            return n3;
+        }
+    } else {
+        if(n2>n3) {
+            return n2;
+        } else {
+            return n3;
+        }
+    }
+}
+
+console.log("f8Bis");
+console.log(f8Bis(10,11,12));
+console.log(f8Bis(10,12,11));
+console.log(f8Bis(12,11,10));
+console.log(f8Bis(10,15,10));
+console.log(f8Bis(10,10,5));
+
+function f8Ter(n1,n2,n3) {
+    if(n1>n2) {
+        // if(n1>n3) {
+            // return n1;
+        // } else {
+            // return n3;
+        // }
+        // n2 est éliminé
+        // La réponse est "le plus grand entre n1 et n3"
+        return f7(n1,n3);
+    } else {
+        // if(n2>n3) {
+            // return n2;
+        // } else {
+            // return n3;
+        // }
+        return f7(n2,n3);
+    }
+}
+
+function f8Quater(n1,n2,n3) {
+    let maxN1N2 = f7(n1,n2);
+    return f7(maxN1N2,n3);
+}
+
+function f8Quinquies(n1,n2,n3) {
+    return f7(f7(n1,n2),n3);
+}
