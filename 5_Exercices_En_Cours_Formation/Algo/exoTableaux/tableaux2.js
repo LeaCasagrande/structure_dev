@@ -50,6 +50,7 @@ console.log(nbOccurrence([14,20,-14,14,75,58,14,0],14));
 console.log(nbOccurrence([14,20,-14,14,75,58,14,0],89));
 
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne true si le nombre existe dans le tableau, false sinon.
+console.log("nbExist")
 function nbExist(t,n) {
     for(let i = 0 ; i < t.length ; i++) {
         if(t[i] == n){
