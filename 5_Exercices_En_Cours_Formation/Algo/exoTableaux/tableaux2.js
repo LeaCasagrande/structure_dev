@@ -1,18 +1,18 @@
 // Écrire une fonction qui prend un tableau en entrée et affiche le dernier élément de ce tableau.
 function displayLast (tab) {
-    let last = tab.length;
-    console.log(tab[last-1]);
+    let last = tab.length -1;
+    console.log(tab[last]);
 }
 
 // Écrire une fonction qui prend un tableau en entrée et retourne le dernier élément de ce tableau.
 function returnLast (tab) {
-    let last = tab.length;
-    return tab[last-1];
+    let last = tab.length - 1;
+    return tab[last];
 }
 
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le minimum de ce tableau.
 function minimum (tab){
-    
+
 }
 
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le maximum de ce tableau.
