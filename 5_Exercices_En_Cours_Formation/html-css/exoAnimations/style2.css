@@ -1,0 +1,82 @@
+@keyframes monTitre {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+h1 {
+    color :red;
+    animation: monTitre 2s;
+}
+
+h1:hover {
+    transition: color 1s linear;
+    color: green;
+}
+
+@keyframes monParagraphe {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.leParagraphe {
+    animation: monParagraphe 3s;
+}
+
+p:active {
+    transition: rotate 2s linear;
+    rotate: 720deg;
+}
+
+@keyframes bouton1 {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(10deg) 
+    }
+    100%{
+        transform: rotate(-10deg)
+    }
+}
+
+.bouton1:hover {
+    animation: bouton1 0.2s infinite alternate;
+}
+
+@keyframes bouton2 {
+    0% {
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(-10px)
+    }
+}
+
+.bouton2 {
+    animation: bouton2 0.2s infinite alternate;
+}
+
+@keyframes bouton3 {
+    0% {
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.3)
+    }
+}
+
+.bouton3:hover {
+    animation-name: bouton3;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}

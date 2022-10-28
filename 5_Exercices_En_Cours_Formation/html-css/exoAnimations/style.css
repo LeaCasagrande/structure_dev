@@ -1,0 +1,19 @@
+#photo1:hover {
+    scale: 2;
+}
+
+#photo1:active {
+    transform: rotate(180deg);
+}
+
+#photo2:hover {
+    transform: skewX(40deg);
+}
+
+#photo2:active {
+    transform: translate(200px)
+}
+
+p{
+    transform: translate(20px) scale(0.5) rotate(35deg) skewY(10deg);
+}

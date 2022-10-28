@@ -1,0 +1,71 @@
+body {
+    background-color: lightgray;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.item {
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.anim1 {
+    margin-left: 80px;
+    animation: animation1 2s linear infinite alternate;
+}
+
+@keyframes animation1 {
+    0%{
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(160px);
+        background-color: lightgreen;
+    }
+}
+
+.anim2 {
+    animation: animation2 2s linear infinite alternate;
+}
+
+@keyframes animation2 {
+    0%{
+        transform: translate(0px, 160px);
+        background-color: lightcoral;
+    }
+    100%{
+        transform: translate(160px, 0px);
+        background-color: lightskyblue;
+    }
+}
+
+.anim3 {
+    animation: animation3 2s linear infinite alternate;
+}
+
+@keyframes animation3 {
+    0%{
+        transform: translate(0px, 0px);
+        background-color: lightseagreen;
+    }
+
+    33%{
+        transform: translate(160px, 0px)
+    }
+
+    67%{
+        transform: translate(0px, 160px)
+    }
+
+    100%{
+        transform: translate(160px, 160px);
+        background-color: yellow
+    }
+}
