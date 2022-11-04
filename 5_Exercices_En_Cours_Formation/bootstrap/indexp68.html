@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylep68.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div id="monCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#monCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/800/400" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/600/300" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/800/400" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/600/300" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/800/400" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/600/300" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#monCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#monCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInscription">Inscription</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalConnexion">Connexion</button>
+
+                <!-- Modal inscription -->
+                <div class="modal" id="modalInscription" tabindex="-1" aria-labelledby="inscription" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="inscription">Inscription</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="name" class="form-label">Nom</label>
+                                      <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="firstname" class="form-label">Prénom</label>
+                                        <input type="text" class="form-control" id="firstname">
+                                      </div>
+                                    <div class="mb-3">
+                                        <label for="mail" class="form-label">Adresse mail</label>
+                                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Votre adresse mail ne sera jamais partagée.</div>
+                                    </div>  
+                                    <div class="mb-3">
+                                      <label for="mdp" class="form-label">Mot de passe</label>
+                                      <input type="password" class="form-control" id="mdp">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="accept">
+                                      <label class="form-check-label" for="accept">J'accepte les conditions</label>
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                <button type="button submit" class="btn btn-primary">M'inscrire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal connexion -->
+                <div class="modal" id="modalConnexion" tabindex="-1" aria-labelledby="connexion" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="connexion">Connexion</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="mailCo" class="form-label">Adresse mail</label>
+                                      <input type="email" class="form-control" id="mailCo">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="mdpCo" class="form-label">Mot de passe</label>
+                                      <input type="password" class="form-control" id="mdpCo">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="souvenir">
+                                      <label class="form-check-label" for="souvenir">Se souvenir de moi</label>
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                <button type="button submit" class="btn btn-primary">Me connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
