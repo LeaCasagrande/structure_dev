@@ -1,7 +1,122 @@
-img{
-    width: 50px;
+/* Navigation */
+nav{
+    background-color: #8adeff;
 }
 
-#avatar {
-    height: 150px;
+.nav-item {
+    margin-right: 10px;
+    border: #e3f2ff 2px;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    background-color: #e3f2ff;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.navbar-toggler {
+    background-color: #e3f2ff;
+}
+
+/* Sections */
+#competences, #contact {
+    background-color: #e3f2ff;
+}
+
+/* Profil */
+#boutonContact {
+    background-color: #8adeff;
+}
+
+#boutonContact:hover {
+    animation: bouton 0.1s infinite alternate;
+}
+
+@keyframes bouton {
+    0% {
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(-10px)
+    }
+}
+
+#leaC {
+    font-size: 1em;
+    font-weight: 500;
+    color: #0dcaf0;
+    text-shadow: 1px 1px 1px #5ff6ff,
+        1px 2px 1px #008aff,
+        1px 3px 1px #008aff,
+       -1px  3px 2px #008aff,
+       -1px -1px 1px #0064b8,
+        2px -1px 2px #0064b8,
+    1px 7px 4px rgba(0,9,35,0.4),
+    1px 9px 10px rgba(0,64,255,0.2),
+    1px 9px 35px rgba(0,64,255,0.2);
+}
+
+#avatar:hover {
+    animation: apparition 2s linear infinite;
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Compétences */
+#inProgress {
+    font-size: large;
+}
+
+.spinner {
+    color: #52ceff;
+}
+
+.compet {
+    height: 50px;
+    align-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    background-color: #52ceff;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Réalisations */
+.carousel {
+    width: 100%;
+}
+
+/* Tablettes et tel */
+@media all and (max-width:767px){
+    #avatar{
+        display: none;
+    }
+}
+
+@media all and (max-width:426px){
+    .spinner{
+        display: none;
+    }
 }

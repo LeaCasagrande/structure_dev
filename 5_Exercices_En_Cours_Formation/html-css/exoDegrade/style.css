@@ -1,4 +1,4 @@
-div {
+div:not(.content) {
     height: 200px;
     width: 200px;
     border: solid 2px;
@@ -28,4 +28,9 @@ div {
 
 #numero5:hover {
     background-image: repeating-radial-gradient(white, black 10px)
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
 }
