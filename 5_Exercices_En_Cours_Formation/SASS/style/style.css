@@ -1,0 +1,27 @@
+h1, h2, p {
+  margin: 2rem 3rem;
+  padding: 0.5rem;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: #8adeff;
+  border: solid blue 2px;
+}
+
+p {
+  background-color: #8adeff;
+}
+
+h1, h2, p {
+  margin: 12px;
+  padding: 24px;
+}
+
+.test {
+  margin: 12px;
+  padding: 24px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+$margin-dimensions: 2rem 3rem;
+$padding-dimensions: 0.5rem;
+
+$main-color: blue;
+$secondary-color: #8adeff;
+
+h1, h2, p {
+    margin: $margin-dimensions;
+    padding: $padding-dimensions;
+}
+
+h1 {
+    color: $main-color;
+}
+
+h2 {
+    color: $secondary-color;
+    border: solid $main-color 2px;
+}
+
+p {
+    background-color: $secondary-color;
+}
+
+$width: 1200px;
+
+@function calcul-marge($nb){
+    $margin-size: $nb / 100;
+    @return $margin-size;
+}
+
+@function calcul-padding($nb){
+    $padding-size: $nb / 50;
+    @return $padding-size;
+}
+
+h1, h2, p {
+    margin: calcul-marge($width);
+    padding: calcul-padding($width);
+}
+
+@function resize($type, $width){
+    @if($type == 'margin'){
+        $margin-size: $width / 100;
+        @return $margin-size;
+    }@else if($type == 'padding'){
+        $padding-size: $width / 50;
+        @return $padding-size;
+    }
+}
+
+.test {
+    margin: resize('margin', $width);
+    padding: resize('padding', $width);
+}
