@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    background: linear-gradient(225deg, #ffff8e 0, #ffff6d 16.67%, #ffe948 33.33%, #f8d110 50%, #f0b900 66.67%, #eaa100 83.33%, #e48a00 100%);
+    font-family: sans-serif;
+}
+
+.container{
+    position: absolute;
+    width: 50%;
+    min-width: 350px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+}
+
+h3{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+input[type="text"]{
+    width: 15vw;
+    color: #e48a00;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+button{
+    width: 25vw;
+    color : #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ffff8e 0, #ffff6d 16.67%, #ffe948 33.33%, #f8d110 50%, #f0b900 66.67%, #eaa100 83.33%, #e48a00 100%);;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+p{
+    margin: 5px 0;
+}
