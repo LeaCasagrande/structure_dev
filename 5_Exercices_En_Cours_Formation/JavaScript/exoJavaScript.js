@@ -225,7 +225,7 @@ console.log(semaine[2]);
 function tirageAuSort(){
     let list = [];
     let nom;
-    let boucle = true;
+    // let boucle = true;
 
     let date = new Date();
     let dateLocale = date.toLocaleString('fr-FR')
