@@ -1,7 +1,7 @@
 // // Jeu du pendu
 // 5 erreurs maximum
 
-let mots = ["antilope","baleine","chameau","dauphin","girafe","lapin","mouton","oustiti","renard","tigre"];
+let mots = ["antilope","baleine","chameau","dauphin","girafe","lapin","mouton","ouistiti","renard","tigre"];
 let motADeviner = mots[Math.floor(Math.random()*mots.length)]; //Tirage au sort du mot à deviner parmi la liste
 
 function pendu(){
@@ -40,10 +40,12 @@ function pendu(){
 
     }
 
-    alert("Félicitations !!")
+    if(!aRemplir.includes("_")){
+        alert("Félicitations !!")
+    }else if(nbError == 5){
+        alert("Dommage, vous avez perdu... Retentez votre chance !")
+    }
 
 }
 
 pendu();
-
-tp1_JS
