@@ -1,3 +1,5 @@
+// Modifications du style
+
 function modif(range){
     let titre = document.getElementById('p1');
     //let range = document.getElementsByTagName('input');
@@ -17,3 +19,14 @@ function modif(range){
         titre.style.transform = "rotate("+range.value+"deg)"
     }
 }
+
+// Compteur cookies
+
+let count = 0;
+function compteur (){
+    count +=1;
+    return count;
+}
+compteur();
+
+console.log(document.cookie = "nbVisites : "+count);
