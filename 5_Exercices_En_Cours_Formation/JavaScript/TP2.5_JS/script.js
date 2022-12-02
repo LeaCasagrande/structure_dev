@@ -1,6 +1,6 @@
 // Créer une nouvelle tâche
 
-let nbTasks = 1;
+let nbTasks = 0;
 
 function addItem(){
     let list = document.getElementById('list');
@@ -21,3 +21,4 @@ function addItem(){
 function removeItem(e){
     e.target.parentNode.remove();
 }
+
