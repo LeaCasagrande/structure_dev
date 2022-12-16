@@ -18,7 +18,6 @@ function addItem(){
 
 // Supprimer une tâche
 
-function removeItem(e){
-    e.target.parentNode.remove();
+function removeItem(){
+   this.target.parentNode.remove();
 }
-
