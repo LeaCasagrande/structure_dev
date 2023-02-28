@@ -1,0 +1,132 @@
+/* I) Créez la BDD relationnelle suivante */
+create database evalSQL;
+use evalSQL;
+
+/* Création des tables simples */
+create table `films`(
+id_film int not null primary key auto_increment,
+titre_film varchar(50) not null,
+duree_film int not null,
+producteur_film varchar(50)
+)engine=InnoDB;
+
+create table `salles`(
+id_salle int not null primary key auto_increment,
+numero_salle varchar(10) not null,
+capacite_salle int not null,
+id_cinema int not null
+)engine=InnoDB;
+
+create table `cinemas`(
+id_cinema int not null primary key auto_increment,
+nom_cinema varchar(50) not null,
+rue_cinema varchar(50) null,
+id_ville int not null
+)engine=InnoDB;
+
+create table `villes`(
+id_ville int not null primary key auto_increment,
+cp_ville varchar(5),
+nom_ville varchar(163) not null
+)engine=InnoDB;
+
+/* Création table association */
+create table `projection`(
+id_film int not null,
+id_salle int not null,
+primary key(id_film, id_salle),
+date_projection datetime not null,
+nb_entrees_projection int
+)engine=innoDB;
+
+/* Ajout des contraintes clés étrangères */
+alter table projection
+add constraint foreign key(id_film) references films(id_film),
+add constraint foreign key(id_salle) references salles(id_salle);
+
+alter table cinemas
+add constraint foreign key(id_ville) references villes(id_ville);
+
+/* II ) Remplissez chaque table de la BDD avec 5 enregistrements */
+insert into films(titre_film, duree_film, producteur_film) values
+('Avatar',200,'James Cameron'),
+('Tirailleurs',98,'Mathieu Vadepied'),
+('Tempête',123,'Christian Duguay'),
+('Le Chat Potté 2',102,'Januel Mercado'),
+('Black Panther',165,'Ryan Coogler'),
+('Titanic',165,'James Cameron');
+
+insert into villes(cp_ville, nom_ville) values
+('65100','Lourdes'),
+('65200','Bagnères-de-Bigorre'),
+('65300','Lannemezan'),
+('65510','Loudenvielle'),
+('65000','Tarbes');
+
+insert into cinemas(nom_cinema, rue_cinema, id_ville) values
+('CGR Tarbes','Avenue des Forges',5),
+('Cinema Pax','Révérend Père Foucault',1),
+('Le Rio','rue Thiers',3),
+('Le Maintenon','rue Alfred-Roland',2),
+('L\'Arixo','rue des Gourgs Blancs',4);
+
+insert into salles(numero_salle, capacite_salle, id_cinema) values
+('A01',600,1),
+('A02',250,1),
+
+('salle1',250,2),
+('salle2',150,2),
+
+('S1',300,3),
+('S2',200,3),
+
+('SA1',470,4),
+('SA2',220,4),
+
+('salleA',375,5),
+('salleB',100,5);
+
+insert into projection(id_film,id_salle,date_projection,nb_entrees_projection) values
+(1,1,'2023-01-09 14:30:00',94),
+(3,6,'2023-01-09 22:15:00',58),
+(2,4,'2023-01-09 11:15:00',27),
+(5,9,'2023-01-09 20:45:00',15),
+(4,2,'2023-01-09 14:00:00',74),
+(6,1,'1997-01-09 14:00:00',74);
+
+/* III) Affichez l’ensemble des films dont la durée est supérieure à 1h */
+select titre_film,duree_film from films where duree_film > 60;
+
+/* IV) Affichez le nombre de salles de Cinémas ayant une capacité entre 300 et 600 sièges */
+select count(id_salle) as "Nombre de salles ayant 300 à 600 sièges" from salles where capacite_salle between 300 and 600;
+-- ou
+select count(id_salle) as "Nombre de salles ayant 300 à 600 sièges" from salles where capacite_salle>=300 and capacite_salle<=600;
+
+/* V) Affichez la liste des projections où le nombre d’entrées a dépassé 25% de la capacité de la salle de
+projection. */
+select projection.* from projection
+inner join salles on projection.id_salle=salles.id_salle
+where projection.nb_entrees_projection > 0.25*salles.capacite_salle;
+
+/* VI) Affichez la capacité totale de chaque cinéma */
+select cinemas.id_cinema, cinemas.nom_cinema, sum(salles.capacite_salle) as "Capacité totale du cinéma"
+from cinemas
+inner join salles on cinemas.id_cinema=salles.id_cinema
+group by cinemas.id_cinema;
+
+/* VII) Supprimez les films qui ne sont pas projetés depuis 3ans */
+delete from films
+where films.id_film in (
+select projection.id_film
+from projection
+where datediff(curdate(), projection.date_projection)>365*3
+);
+
+/* VIII) Doublez le nombre d’entrée de toutes les séances pour le film dont le titre est « Avatar » */
+update projection
+set nb_entrees_projection=nb_entrees_projection*2
+where projection.id_film in (
+	select films.id_film
+	from films
+	inner join projection on films.id_film=projection.id_film
+	where films.titre_film='Avatar');

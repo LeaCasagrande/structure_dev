@@ -101,7 +101,7 @@ insert into image (id_image, nom_image, url_image) values
 (1, 'image_4', 'https://lagendageek.com/wp-content/uploads/2021/08/boblennon.jpg');
 
 insert into utilisateur (id_utilisateur, pseudo_utilisateur, mail_utilisateur, password_utilisateur, id_roles, id_image) values
-(1, 'bobbidou', 'bobie@gmail.com', 'azerty77', 2, 1)
+(1, 'bobbidou', 'bobie@gmail.com', 'azerty77', 2, 1),
 (2, 'Micael', 'aaaaaaaaaaaaaa@gmail.com', 'azerty77', 1, 1);
 
 update utilisateur 
